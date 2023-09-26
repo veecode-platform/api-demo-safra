@@ -1,0 +1,8 @@
+site_name: "api-demo-safra"
+site_description: "api-demo-safra"
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core

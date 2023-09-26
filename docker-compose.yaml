@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  api-demo-safra:
+    container_name: api-demo-safra 
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"

@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: api-demo-safra
+  description: "api-demo-safra"
+  annotations:
+    github.com/project-slug: veecode-platform/api-demo-safra
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-id: "api-demo-safra"
+    vault.io/secrets-path: "api-demo-safra"
+    grafana/tag-selector: "api-demo-safra"
+    grafana/alert-label-selector: "alertname=api-demo-safra"
+    argocd/proxy-url: '/argocd/api'
+    argocd/app-name: "api-demo-safra"
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "group:default/admin"
+
+
+
